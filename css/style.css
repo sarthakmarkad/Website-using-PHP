@@ -1,0 +1,604 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    min-height: 100vh;
+    background: #f4f7fb;
+    color: #1f2937;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   Background
+========================= */
+
+.background-circle {
+    position: fixed;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.circle-one {
+    width: 400px;
+    height: 400px;
+    background: #dbeafe;
+    top: -180px;
+    right: -100px;
+}
+
+.circle-two {
+    width: 350px;
+    height: 350px;
+    background: #e0e7ff;
+    bottom: -150px;
+    left: -120px;
+}
+
+
+/* =========================
+   Navbar
+========================= */
+
+.navbar {
+    padding: 22px 0;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    font-weight: 800;
+    color: #111827;
+    text-decoration: none;
+}
+
+.navbar-brand i {
+    color: #2563eb;
+    margin-right: 7px;
+}
+
+.navbar-brand span {
+    color: #2563eb;
+}
+
+.navbar-text {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* =========================
+   Main
+========================= */
+
+.main-container {
+    padding-top: 45px;
+    padding-bottom: 30px;
+}
+
+
+/* =========================
+   Hero
+========================= */
+
+.hero-section {
+    margin-bottom: 35px;
+}
+
+.icon-circle {
+    width: 65px;
+    height: 65px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #2563eb;
+    color: white;
+    font-size: 27px;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+}
+
+.hero-section h1 {
+    margin-top: 20px;
+    font-size: 38px;
+    font-weight: 800;
+    color: #111827;
+}
+
+.hero-section p {
+    color: #6b7280;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+
+/* =========================
+   Calculator Card
+========================= */
+
+.calculator-card {
+    background: white;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+    border: 1px solid #e5e7eb;
+}
+
+
+/* Left */
+
+.calculator-left {
+    padding: 40px;
+}
+
+
+/* Right */
+
+.calculator-right {
+    padding: 40px;
+    background: #f8fafc;
+    border-left: 1px solid #e5e7eb;
+}
+
+
+/* =========================
+   Section Titles
+========================= */
+
+.section-title,
+.tariff-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.title-icon,
+.tariff-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: #eff6ff;
+    color: #2563eb;
+    font-size: 20px;
+}
+
+.section-title h3,
+.tariff-header h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.section-title p,
+.tariff-header p {
+    color: #6b7280;
+    font-size: 13px;
+    margin: 0;
+}
+
+
+/* =========================
+   Form
+========================= */
+
+.input-group-custom {
+    margin-bottom: 23px;
+}
+
+.input-group-custom label {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 9px;
+}
+
+.input-group-custom label i {
+    color: #2563eb;
+    margin-right: 7px;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper input {
+    width: 100%;
+    height: 52px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    padding: 0 16px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.input-wrapper input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+.input-wrapper span {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    color: #6b7280;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   Buttons
+========================= */
+
+.button-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.calculate-btn {
+    flex: 1;
+    height: 52px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.25s;
+}
+
+.calculate-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+.calculate-btn i {
+    margin-right: 7px;
+}
+
+.reset-btn {
+    height: 52px;
+    padding: 0 20px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    background: white;
+    color: #4b5563;
+    font-weight: 600;
+}
+
+.reset-btn:hover {
+    background: #f3f4f6;
+}
+
+
+/* =========================
+   Error
+========================= */
+
+.error-message {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #dc2626;
+    padding: 12px 15px;
+    border-radius: 9px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.error-message i {
+    margin-right: 7px;
+}
+
+.validation-message {
+    display: block;
+    color: #dc2626;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+
+/* =========================
+   Tariff
+========================= */
+
+.tariff-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.tariff-item {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 13px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    transition: 0.2s;
+}
+
+.tariff-item:hover {
+    transform: translateX(4px);
+    border-color: #bfdbfe;
+}
+
+.tariff-number {
+    width: 38px;
+    height: 38px;
+    border-radius: 9px;
+    background: #eff6ff;
+    color: #2563eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.tariff-details {
+    flex: 1;
+}
+
+.tariff-details h5 {
+    font-size: 14px;
+    margin: 0 0 3px;
+    font-weight: 700;
+}
+
+.tariff-details p {
+    margin: 0;
+    color: #9ca3af;
+    font-size: 12px;
+}
+
+.tariff-rate {
+    font-size: 15px;
+    font-weight: 800;
+    color: #2563eb;
+}
+
+.tariff-rate small {
+    color: #9ca3af;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+
+/* =========================
+   Result Card
+========================= */
+
+.result-card {
+    margin-top: 30px;
+    background: white;
+    border-radius: 22px;
+    padding: 35px;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+    border: 1px solid #e5e7eb;
+    animation: slideUp 0.5s ease;
+}
+
+@keyframes slideUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.result-label {
+    color: #2563eb;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.result-header h2 {
+    font-size: 25px;
+    margin-top: 5px;
+    font-weight: 750;
+}
+
+.success-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #dcfce7;
+    color: #16a34a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Total */
+
+.total-bill {
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.total-bill p {
+    color: #6b7280;
+    margin-bottom: 5px;
+}
+
+.total-bill h1 {
+    font-size: 45px;
+    font-weight: 800;
+    color: #2563eb;
+    margin: 0;
+}
+
+.total-bill span {
+    color: #9ca3af;
+    font-size: 13px;
+}
+
+
+/* =========================
+   Breakdown
+========================= */
+
+.breakdown-section {
+    padding-top: 25px;
+}
+
+.breakdown-section h4 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.breakdown-section h4 i {
+    color: #2563eb;
+    margin-right: 7px;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table th {
+    font-size: 12px;
+    color: #6b7280;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.table td {
+    font-size: 13px;
+    padding: 13px 8px;
+}
+
+.table tfoot {
+    border-top: 2px solid #e5e7eb;
+}
+
+.table tfoot th {
+    color: #111827;
+    font-size: 14px;
+    text-transform: none;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+.footer-text {
+    text-align: center;
+    color: #9ca3af;
+    font-size: 12px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.student-name {
+    color: #111827;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.student-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #6b7280;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.project-tech {
+    font-size: 11px;
+    color: #9ca3af;
+}
+
+.project-tech i {
+    color: #2563eb;
+    margin-right: 5px;
+}
+
+/* =========================
+   Mobile Responsive
+========================= */
+
+@media (max-width: 991px) {
+
+    .calculator-right {
+        border-left: none;
+        border-top: 1px solid #e5e7eb;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .navbar-text {
+        display: none;
+    }
+
+    .main-container {
+        padding-top: 25px;
+    }
+
+    .hero-section h1 {
+        font-size: 28px;
+    }
+
+    .hero-section p {
+        font-size: 14px;
+    }
+
+    .calculator-left,
+    .calculator-right {
+        padding: 25px 20px;
+    }
+
+    .result-card {
+        padding: 25px 20px;
+    }
+
+    .total-bill h1 {
+        font-size: 37px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .reset-btn {
+        width: 100%;
+    }
+
+}
